@@ -51,7 +51,7 @@ int lca(int u , int v){
 	if(u == v) return u;
 	for(int i = 30 ; i >= 0 ; i--){
 		if(dp[u][i] != dp[v][i])
-			u = dp[u][i] , v=dp[u][i];
+			u = dp[u][i] , v=dp[v][i];
 	}
 	return dp[u][0];
 		
